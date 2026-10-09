@@ -1,0 +1,487 @@
+/* x-sm */
+@media screen and (max-width: 640px) {
+}
+/* sm */
+@media screen and (min-width: 640px) {
+  .parent-header {
+    flex-direction: row;
+    align-items: center;
+    padding-block: 18px;
+  }
+  .parent-header .item-img {
+    order: 1;
+    margin-inline-start: auto;
+    gap: 15px;
+  }
+  .parent-header .item-connect {
+    width: fit-content;
+    gap: 5px;
+    padding-inline: 8px;
+    margin-right: 5px;
+  }
+  .parent-header .item-img .personal-img {
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .parent-header .item-img .personal-img .name {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+    display: flex;
+  }
+}
+
+/* md */
+@media screen and (min-width: 768px) {
+  .dashboard {
+    display: grid;
+    grid-template-columns: 55px 1fr;
+  }
+  .container {
+    display: grid;
+    grid-template-areas:
+      "parent-header parent-header"
+      "parent-financial parent-financial"
+      "recent-activities charts"
+      "recent-transactions recent-transactions"
+      "monthly-bills summary"
+      "budget-overview  payment-methods";
+    column-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .parent-header {
+    grid-area: parent-header;
+  }
+  .parent-financial {
+    grid-area: parent-financial;
+  }
+  .recent-activities {
+    grid-area: recent-activities;
+  }
+  .charts {
+    grid-area: charts;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bars {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .recent-transactions {
+    grid-area: recent-transactions;
+  }
+  .monthly-bills {
+    grid-area: monthly-bills;
+    display: flex;
+    flex-direction: column;
+  }
+  .monthly-bills .details-bills {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+  .summary {
+    grid-area: summary;
+  }
+  .budget-overview {
+    grid-area: budget-overview;
+  }
+  .payment-methods {
+    grid-area: payment-methods;
+  }
+  .container {
+    width: 92%;
+  }
+  .parent-header {
+    margin-top: 35px;
+  }
+
+  .item-title i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    background-color: #2f4eef;
+    color: white;
+    padding: 20px 30px;
+  }
+  .item-title h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .item-title p,
+  .parent-header .item-img .personal-img .name {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .parent-header .item-img .personal-img .account {
+    font-size: 12px;
+    line-height: 16px;
+    display: block;
+    color: #6a7282;
+  }
+  .parent-header .item-img .personal-img {
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .parent-header .item-img .personal-img img {
+    width: 40px;
+  }
+  #financial-summary .parent-financial {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #financial-summary .parent-financial .item {
+    width: 33.33%;
+  }
+  #financial-summary .inner .pound {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  #money-management .recent-activities h2 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .title h2 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .title span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .budget-overview .total .budget {
+    flex-direction: column;
+  }
+  .budget-overview .content {
+    flex-direction: column;
+  }
+  .summary .accouunt .card {
+    flex-direction: column;
+    align-items: start;
+  }
+  #money-management .recent-transactions table th {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #money-management .recent-transactions table tbody td {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .sidebar {
+    display: none;
+  }
+  .md-sidebar {
+    background-color: white;
+    display: block;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    width: 55px;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .md-sidebar .item-title i {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin: 0 auto 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+  }
+  .md-sidebar .links,
+  .md-sidebar .quick-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+  }
+  .md-sidebar .links .home,
+  .md-sidebar .links .item,
+  .md-sidebar .quick-links .item {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+  .md-sidebar .links .home {
+    font-size: 16px;
+  }
+  .md-sidebar .links .item {
+    font-size: 16px;
+    color: #6a7282;
+  }
+  .md-sidebar .item i {
+    margin: 0;
+    font-size: 17px;
+  }
+  .md-sidebar .quick-links i {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+  .md-sidebar .quick-links .fa-paper-plane {
+    background-color: #eaf3ff;
+    color: #155dfc;
+  }
+  .md-sidebar .quick-links .fa-plus {
+    background-color: #e6faee;
+    color: #00a63e;
+  }
+  .md-sidebar .quick-links .fa-receipt {
+    background-color: #f7edff;
+    color: #9810fa;
+  }
+  .md-sidebar .quick-links .fa-chart-line {
+    background-color: #fff0e6;
+    color: #f54900;
+  }
+  .md-sidebar .links .home {
+    color: #1447e6;
+    background-color: #eff6ff;
+  }
+  .md-sidebar .links .home:hover {
+    cursor: pointer;
+  }
+  .md-sidebar .links .item:hover {
+    background-color: #f9fafb;
+    cursor: pointer;
+  }
+  .md-sidebar .quick-links .item:hover {
+    background-color: #f9fafb;
+    cursor: pointer;
+    transform: translateX(2px);
+  }
+  .sidebar,
+  .md-sidebar {
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 transparent;
+  }
+}
+/* lg */
+@media screen and (min-width: 1024px) {
+  .budget-overview .total .budget {
+    flex-direction: row;
+  }
+  .budget-overview .content {
+    flex-direction: row;
+  }
+
+  .summary .accouunt .card {
+    flex-direction: row;
+    align-items: start;
+  }
+  #financial-summary .inner .pound {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+}
+/* xl */
+@media screen and (min-width: 1280px) {
+  .dashboard {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+  }
+  .container {
+    display: grid;
+    grid-template-areas:
+      "parent-header parent-header parent-header"
+      "parent-financial parent-financial parent-financial"
+      "recent-activities recent-transactions recent-transactions"
+      "monthly-bills recent-transactions recent-transactions"
+      "budget-overview charts payment-methods"
+      "budget-overview summary payment-methods"
+      "budget-overview  . .";
+    column-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .parent-header {
+    grid-area: parent-header;
+  }
+  .parent-financial {
+    grid-area: parent-financial;
+  }
+  .recent-activities {
+    grid-area: recent-activities;
+  }
+
+  .recent-transactions {
+    display: flex;
+    flex-direction: column;
+  }
+  .recent-transactions .table {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .recent-transactions table {
+    height: 100%;
+  }
+
+  .charts {
+    grid-area: charts;
+  }
+
+  .bars {
+    flex-grow: 1;
+  }
+  .recent-transactions {
+    grid-area: recent-transactions;
+  }
+  .monthly-bills {
+    grid-area: monthly-bills;
+  }
+  .payment-methods {
+    grid-area: payment-methods;
+  }
+  .monthly-bills .details-bills {
+    flex-grow: 1;
+  }
+  .summary {
+    grid-area: summary;
+  }
+  .budget-overview {
+    grid-area: budget-overview;
+  }
+  .budget-overview .total .budget {
+    flex-direction: column;
+  }
+  .budget-overview .content {
+    flex-direction: column;
+  }
+  .summary .accouunt .card {
+    padding: 10px;
+  }
+
+  .sidebar {
+    background-color: white;
+    display: block;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    width: 250px;
+  }
+  .sidebar .links,
+  .sidebar .quick-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .sidebar .links .home {
+    margin-top: 35px;
+    background-color: #eff6ff;
+    color: #1447e6;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+  .sidebar .links .home:hover {
+    cursor: pointer;
+  }
+
+  .sidebar .links .item {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #4a5565;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  .sidebar .links .item:hover {
+    cursor: pointer;
+    background-color: #f9fafb;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  .sidebar .links .home.item:hover {
+    cursor: pointer;
+  }
+  .sidebar .item i {
+    margin-left: 15px;
+    font-size: 15px;
+  }
+  .sidebar .quick-links .item {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 600;
+    color: #374151;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+  .sidebar .quick-links .item:hover {
+    cursor: pointer;
+    background-color: #f9fafb;
+    padding: 15px;
+    border-radius: 10px;
+    transform: translateX(3px);
+  }
+  .sidebar .quick-links p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #364153;
+    margin-top: 20px;
+  }
+  .sidebar .quick-links i {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 15px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sidebar .quick-links .fa-paper-plane {
+    background-color: #eaf3ff;
+    color: #155dfc;
+  }
+  .sidebar .quick-links .fa-plus {
+    background-color: #e6faee;
+    color: #00a63e;
+  }
+  .sidebar .quick-links .fa-receipt {
+    background-color: #f7edff;
+    color: #9810fa;
+  }
+  .sidebar .quick-links .fa-chart-line {
+    background-color: #fff0e6;
+    color: #f54900;
+  }
+
+  .md-sidebar {
+    display: none;
+  }
+}
+/* xxl */
+@media screen and (min-width: 1536px) {
+}

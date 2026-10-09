@@ -1,0 +1,1111 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scrollbar-width: none;
+}
+body {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  background-color: #f9fafb;
+}
+img {
+  display: block;
+  width: 100%;
+}
+.container {
+  width: 95%;
+  margin: auto;
+}
+.dashboard {
+  background-color: #f9fafb;
+}
+
+.box-shadow {
+  box-shadow: 1px 2px 3px#E1E2E3;
+}
+.bor-rad {
+  border-radius: 15px;
+}
+
+/* ###################start sidebar section#################   */
+.sidebar,
+.md-sidebar {
+  display: none;
+}
+
+/* ###################end sidebar section#################   */
+/* ###################start header section#################   */
+/* #header {
+  grid-area: header;
+} */
+.parent-header {
+  background: linear-gradient(to left, #f5f8fd, #ffffff, #f5f8fd);
+  border: 1px solid #e2e2e3;
+  padding: 20px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid rgba(34, 197, 94, 0.08);
+}
+.item-title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.item-title i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  background-color: #2f4eef;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 15px;
+}
+.item-title h1 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #101828;
+}
+.item-title p {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #4a5565;
+  padding-top: 5px;
+}
+.parent-header .item-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.parent-header .item-img .personal-img {
+  width: 55px;
+  background-color: white;
+  border-radius: 14px;
+  border: 1px solid #e0e2e5;
+  padding: 5px 10px;
+  display: flex;
+}
+.parent-header .item-img .personal-img img {
+  border-radius: 20px;
+  border: 1px solid #e0e2e5;
+  width: 35px;
+}
+.parent-header .item-img .personal-img .name {
+  display: none;
+}
+.parent-header .item-img .personal-img .account {
+  display: none;
+}
+.parent-header .item-img .icon-header {
+  display: flex;
+  column-gap: 5px;
+}
+.parent-header .item-img .fa-magnifying-glass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  border: 1px solid #e0e2e5;
+  color: #364153;
+  padding-inline: 15px;
+  padding-block: 10px;
+  border-radius: 8px;
+}
+.parent-header .item-img .fa-bell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  border: 1px solid #e0e2e5;
+  color: #364153;
+  padding-inline: 15px;
+  padding-block: 10px;
+  border-radius: 8px;
+  position: relative;
+}
+.parent-header .item-img .fa-bell div {
+  background-color: #fb2c36;
+  color: white;
+  position: absolute;
+  top: -10px;
+  right: -5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+.parent-header .item-connect {
+  background-color: #f0fdf4;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  padding-block: 7px;
+  border: 1px solid #dbfce7;
+  border-radius: 10px;
+}
+.parent-header .item-connect .status {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #3ed67a;
+}
+.parent-header .item-connect span {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #2e384e;
+}
+/* ###################end header section#################   */
+
+/* ###################start financial-summary section#################   */
+#financial-summary {
+  grid-area: financial-summary;
+}
+#financial-summary .parent-financial {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 15px;
+}
+#financial-summary .inner {
+  background-color: white;
+  padding: 30px;
+  border: 1px solid #e5e7eb;
+}
+#financial-summary .inner .pay {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #6a7282;
+  margin-bottom: 5px;
+}
+#financial-summary .inner .pound {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #101828;
+  margin-bottom: 10px;
+}
+#financial-summary .inner div span {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #00a63e;
+  margin-bottom: 10px;
+}
+#financial-summary .inner div .fa-arrow-up {
+  font-size: 13px;
+  color: #00a63e;
+}
+#financial-summary .inner div .fa-arrow-down {
+  font-size: 13px;
+  color: #e7000b;
+}
+#financial-summary .inner div .special {
+  color: #e7000b;
+}
+/* ###################end financial-summary section#################   */
+
+/* ###################start money management section#################   */
+.title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.title h2 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.title span {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #6a7282;
+}
+
+.title span:hover,
+.title div:hover {
+  cursor: pointer;
+  color: #101828;
+}
+
+.title div {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #101828;
+}
+/* الأنشطة الحديثة */
+
+#money-management .recent-activities {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+#money-management .recent-activities h2 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+#money-management .recent-activities .account,
+#money-management .recent-activities .card {
+  display: flex;
+  gap: 15px;
+  background-color: #eff6ff;
+  padding: 15px 10px;
+  border-left: 5px solid #3182ff;
+}
+#money-management .recent-activities .account .type,
+#money-management .recent-activities .card .type {
+  margin-inline-start: auto;
+  color: #155dfc;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+#money-management .recent-activities .account .icon,
+#money-management .recent-activities .card .icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #155dfc;
+  background-color: #dbeafe;
+  border-radius: 50%;
+}
+#money-management .recent-activities .account .new-account h3,
+#money-management .recent-activities .card .new-account h3 {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+#money-management .recent-activities .account .new-account p,
+#money-management .recent-activities .card .new-account p {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #4a5565;
+}
+#money-management .recent-activities .account .new-account p + p,
+#money-management .recent-activities .card .new-account p + p {
+  color: #6a7282;
+  padding-top: 15px;
+}
+#money-management .recent-activities .card {
+  border-left: 5px solid #07ca55;
+}
+#money-management .recent-activities .card .icon {
+  color: #07ca55;
+}
+#money-management .recent-activities .card .type {
+  color: #00a63e;
+}
+#money-management .recent-activities .all-activities {
+  border-top: 2px solid #f3f4f6;
+  padding: 15px;
+  text-align: center;
+}
+#money-management .recent-activities .all-activities button {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  color: #1447e6;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  font-family: inherit;
+}
+/*المعاملات الأخيرة */
+#money-management .recent-transactions {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+  border: 1px solid #e5e7eb;
+}
+
+#money-management .recent-transactions .table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+#money-management .recent-transactions table {
+  border-collapse: collapse;
+  width: 100%;
+}
+#money-management .recent-transactions table tr,
+#money-management .recent-transactions table th {
+  border-bottom: 1px solid lab(76.06% 0.22 -8.5 / 0.284);
+}
+#money-management .recent-transactions table th {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #101828;
+  text-align: right;
+  padding-bottom: 10px;
+}
+#money-management .recent-transactions table tbody td {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+  padding-left: 25px;
+  padding-right: 5px;
+  padding-block: 15px;
+  color: #4a5565;
+}
+#money-management .recent-transactions table .td-img {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+#money-management .recent-transactions table .td-img img {
+  width: 40px;
+  border-radius: 50%;
+}
+#money-management .recent-transactions table .td-img i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffedd4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f54900;
+}
+#money-management .recent-transactions table .td-img .fa-cart-shopping {
+  background-color: #dbeafe;
+  color: #155dfc;
+}
+#money-management .recent-transactions table .td-img .fa-gas-pump {
+  background-color: #ffe2e2;
+  color: #e7000b;
+}
+#money-management .recent-transactions table .td-img .fa-film {
+  background-color: #e0e7ff;
+  color: #4f39f6;
+}
+#money-management .recent-transactions table .td-img .fa-dumbbell {
+  background-color: #cefafe;
+  color: #0092b8;
+}
+#money-management .recent-transactions table .td-img .fa-graduation-cap {
+  background-color: #d0fae5;
+  color: #0092b8;
+}
+
+#money-management .recent-transactions table .special-icon {
+  padding: 4px 10px;
+  border-radius: 15px;
+  width: fit-content;
+}
+#money-management .recent-transactions table .one {
+  background-color: #dbfce7;
+  color: #016630;
+}
+#money-management .recent-transactions table .two {
+  background-color: #ffedd4;
+  color: #9f2d00;
+}
+#money-management .recent-transactions table .three {
+  background-color: #dbeafe;
+  color: #193cb8;
+}
+#money-management .recent-transactions table .four {
+  background-color: #f3e8ff;
+  color: #6e11b0;
+}
+#money-management .recent-transactions table .five {
+  background-color: #dbfce7;
+  color: #016630;
+}
+#money-management .recent-transactions table .six {
+  background-color: #ffe2e2;
+  color: #9f0712;
+}
+#money-management .recent-transactions table .seven {
+  background-color: #e0e7ff;
+  color: #372aac;
+}
+#money-management .recent-transactions table .eight {
+  background-color: #cefafe;
+  color: #005f78;
+}
+#money-management .recent-transactions table .nine {
+  background-color: #d0fae5;
+  color: #006045;
+}
+#money-management .recent-transactions table .col-font {
+  color: #101828;
+}
+#money-management .recent-transactions table .td-img p + p {
+  color: #6a7282;
+  font-weight: 600;
+}
+
+#money-management .recent-transactions table .status-pay {
+  background-color: #dbfce7;
+  padding: 3px 10px;
+  border-radius: 15px;
+  color: #016630;
+}
+#money-management .recent-transactions table .alarm {
+  color: #894b00;
+  background-color: #fef9c2;
+}
+
+#money-management .recent-transactions table .cash {
+  color: #016630;
+}
+#money-management .recent-transactions table .cash-font {
+  font-weight: 600;
+}
+#money-management .recent-transactions table td.date {
+  font-weight: 600;
+}
+/* الفواتير الشهرية */
+#money-management .monthly-bills {
+  margin-top: 15px;
+  padding: 25px;
+  background-color: white;
+}
+#money-management .monthly-bills .all-bills p {
+  text-align: center;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+#money-management .monthly-bills .all-bills div {
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #6a7282;
+}
+#money-management .monthly-bills .details-bills {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+#money-management .monthly-bills .details-bills .internet,
+#money-management .monthly-bills .details-bills .elect,
+#money-management .monthly-bills .details-bills .phone,
+#money-management .monthly-bills .details-bills .netflix {
+  width: 50%;
+  background-color: #f9fafb;
+  text-align: center;
+  padding: 15px;
+  border: 2px solid #f3f4f6;
+}
+#money-management .monthly-bills .details-bills .name {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #6a7282;
+}
+#money-management .monthly-bills .details-bills .cost {
+  font-size: 12px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+#money-management .monthly-bills .details-bills .date-net {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #fb2c36;
+}
+#money-management .monthly-bills .details-bills .date-elect {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #f97200;
+}
+#money-management .monthly-bills .details-bills .date-phone {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #00c950;
+}
+#money-management .monthly-bills .details-bills .date-netflix {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #6a7282;
+}
+#money-management .monthly-bills .details-bills i {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  margin-bottom: 5px;
+  border-radius: 8px;
+}
+#money-management .monthly-bills .fa-wifi {
+  background-color: #dbeafe;
+  color: #155dfc;
+}
+#money-management .monthly-bills .fa-bolt {
+  background-color: #fef9c2;
+  color: #d08700;
+}
+#money-management .monthly-bills .fa-phone {
+  background-color: #dbfce7;
+  color: #00a63e;
+}
+#money-management .monthly-bills .fa-tv {
+  background-color: #ffe2e2;
+  color: #e7000b;
+}
+/* نظرة عامة على الميزانية */
+.budget-overview {
+  margin-top: 15px;
+  padding: 25px;
+  background-color: white;
+}
+.budget-overview .total {
+  background-color: #eef4ff;
+  padding: 20px;
+  border: 2px solid #dbeafe;
+  border-radius: 20px;
+}
+.budget-overview .total .budget,
+.budget-overview .total .used {
+  display: flex;
+  justify-content: space-between;
+}
+.budget-overview .total .total-budget p:first-child {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #155dfc;
+}
+.budget-overview .total .total-budget p:last-child {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #1c398e;
+}
+
+.budget-overview .total .remain p:first-child {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}
+.budget-overview .total .remain p:last-child {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #00a63e;
+}
+.budget-overview .total .used {
+  margin-top: 15px;
+}
+.budget-overview .total .used p {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #4a5565;
+}
+.budget-overview .total .progress-bar {
+  height: 8px;
+  width: 100%;
+  background: linear-gradient(to left, #3d79ff 82.5%, #e5e7eb 82.5%);
+  margin-top: 5px;
+  border-radius: 5px;
+}
+.budget-overview .item {
+  padding: 20px;
+  border: 2px solid #dbeafe;
+  border-radius: 20px;
+  background-color: #fcfcfd;
+  margin-top: 15px;
+}
+.budget-overview .item:hover {
+  background-color: #f5f6f8;
+  transform: translateY(-2px);
+  box-shadow: 1px 1px 2px#E1E2E3;
+}
+.budget-overview .content {
+  display: flex;
+  gap: 10px;
+}
+.budget-overview .content .content-flex {
+  display: flex;
+  gap: 10px;
+}
+.budget-overview .remain {
+  margin-inline-start: auto;
+}
+.budget-overview .intertain {
+  margin-top: 25px;
+}
+.budget-overview .content div:nth-of-type(2) p:first-child {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.budget-overview .content div:nth-of-type(2) p:last-child {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #6a7282;
+}
+.budget-overview .content .remain p:first-child {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.budget-overview .content .remain .special {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+
+  padding: 3px 8px;
+  border-radius: 15px;
+  width: fit-content;
+}
+.budget-overview .intertain .content .remain .special {
+  color: #166534;
+  background-color: #dcfce7;
+}
+.budget-overview .bills .content .remain .special {
+  color: #991b1b;
+  background-color: #fde1e1;
+}
+.budget-overview .care .content .remain .special {
+  color: #92400e;
+  background-color: #fee2e2;
+}
+.budget-overview .home .content .remain .special {
+  color: #166534;
+  background-color: #dcfce7;
+}
+.budget-overview .item i {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.budget-overview .fa-film {
+  color: #f54900;
+  background-color: #ffedd4;
+}
+.budget-overview .fa-file-invoice-dollar {
+  color: #e7000b;
+  background-color: #fee2e2;
+}
+.budget-overview .fa-heart {
+  color: #e60076;
+  background-color: #fce7f3;
+}
+.budget-overview .fa-cart-shopping {
+  color: #00a63e;
+  background-color: #dcfce7;
+}
+.budget-overview .intertain .progress-bar {
+  height: 8px;
+  width: 100%;
+  background: linear-gradient(to left, #ff6900 82.5%, #e5e7eb 82.5%);
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.budget-overview .bills .progress-bar {
+  height: 8px;
+  width: 100%;
+  margin-top: 10px;
+  background-color: #fb2c36;
+  border-radius: 5px;
+}
+.budget-overview .care .progress-bar {
+  height: 8px;
+  width: 100%;
+  background: linear-gradient(to left, #f6339a 82.5%, #e5e7eb 82.5%);
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.budget-overview .home .progress-bar {
+  height: 8px;
+  width: 100%;
+  background: linear-gradient(to left, #00c950 82.5%, #e5e7eb 82.5%);
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+/* الدخل مقابل المصروفات */
+.charts {
+  margin-top: 15px;
+  padding: 25px;
+  background-color: white;
+}
+.charts .chart-title {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+}
+.charts .chart-green,
+.charts .chart-red {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.charts .chart-green div {
+  background-color: #10b981;
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+}
+.charts .chart-red div {
+  background-color: #ef4444;
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+}
+.charts .bars {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+.charts .bars .bars-chart {
+  display: flex;
+  gap: 2px;
+  padding-inline: 20px;
+}
+.charts .bars .bars-chart div:hover {
+  opacity: 0.8;
+}
+.charts .bars .bars-chart div:first-child {
+  width: 15px;
+  height: 95px;
+  background-color: #10b981;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.charts .bars .bars-chart div:last-child {
+  width: 15px;
+  height: 45px;
+  align-self: flex-end;
+  background-color: #ef4444;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.charts .bars .week-num {
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+/* ملخص الحساب */
+.summary {
+  margin-top: 15px;
+  padding: 25px;
+  background-color: white;
+}
+.summary .accouunt .card {
+  display: flex;
+ 
+  gap: 10px;
+  margin-top: 15px;
+  background-color: #f9fafb;
+  border: 1px solid #e4eaef;
+  border-radius: 10px;
+  padding: 20px;
+}
+.summary .accouunt .card .card-flex {
+  display: flex;
+  gap: 10px;
+}
+.summary .accouunt .card div:last-child {
+  margin-inline-start: auto;
+}
+.summary .accouunt .card i {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 8px;
+}
+.summary .fa-building-columns {
+  background-color: #dbeafe;
+  color: #155dfc;
+}
+.summary .fa-piggy-bank {
+  background-color: #dbfce7;
+  color: #00a63e;
+}
+.summary .fa-building-columns {
+  background-color: #f3e8ff;
+  color: #9810fa;
+}
+.summary .accouunt .card div p:first-child {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.summary .accouunt .card div p:last-child {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #6a7282;
+}
+.summary .accouunt .card div:last-child {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.summary .accouunt .card div:last-child.special {
+  color: #e7000b;
+}
+
+/* وسائل الدفع */
+.payment-methods {
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+  margin-top: 15px;
+  font-family: inherit;
+}
+.payment-card {
+  flex: 1 1 250px;
+  min-width: 0;
+  height: 210px;
+  perspective: 1000px;
+  margin-bottom: 15px;
+} 
+.payment-card .inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: flip-card-back 0.7s ease forwards;
+} 
+@keyframes flip-card {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(180deg);
+  }
+}
+@keyframes flip-card-back {
+  from {
+    transform: rotateY(180deg);
+  }
+
+  to {
+    transform: rotateY(0deg);
+  }
+}
+.payment-card:hover .inner {
+  animation: flip-card 0.7s ease forwards;
+}
+.payment-front,
+.payment-back {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 15px;
+  color: #fff;
+  overflow: hidden;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.payment-front {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: rotateY(0deg);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.payment-back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  background: linear-gradient(135deg, #1f2937, #111827);
+  transform: rotateY(180deg);
+}
+.visa-card .payment-front {
+  background: #372aac;
+}
+.mastercard-card .payment-front {
+  background: #c70036;
+}
+.paypal-card .payment-front {
+  background: #372aac;
+}
+.payment-chip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 38px;
+  height: 28px;
+  border-radius: 6px;
+}
+.visa-card .payment-chip {
+  background-color: #9f99d7;
+}
+.mastercard-card .payment-chip {
+  background-color: #e4859e;
+}
+.paypal-card .payment-chip {
+  background-color: #4763c6;
+}
+.payment-chip span {
+  width: 23px;
+  height: 17px;
+  border-radius: 4px;
+}
+.visa-card .payment-chip span {
+  background-color: #abb8e5;
+}
+.mastercard-card .payment-chip span {
+  background-color: #c0677f;
+}
+.paypal-card .payment-chip span {
+  background-color: #91a1dd;
+}
+.payment-number {
+  margin: 12px 0;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  overflow-wrap: anywhere;
+}
+.payment-bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+}
+.payment-bottom > div {
+  min-width: 0;
+}
+.payment-label {
+  margin: 0 0 5px;
+  color: #dbeafe;
+  font-size: 14px;
+}
+.payment-name {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+.payment-magnetic {
+  flex-shrink: 0;
+  width: 100%;
+  height: 35px;
+  margin-top: 15px;
+  background: linear-gradient(to right, black, #454242);
+}
+.payment-signature-label {
+  margin: 0;
+  color: #d1d5db;
+  font-size: 10px;
+}
+.payment-signature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 30px;
+  padding: 5px 10px;
+  background-color: #f9fafb;
+  color: #111827;
+  font-size: 12px;
+}
+.payment-signature span {
+  flex: 1;
+  height: 15px;
+  background: repeating-linear-gradient(to left, #d1d5db, #fff);
+}
+.payment-cvv {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: flex-end;
+  gap: 10px;
+  font-size: 12px;
+}
+.payment-cvv div {
+  background-color: white;
+  padding: 10px;
+  color: black;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  border-radius: 15px;
+}
+.payment-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.payment-logo {
+  font-size: 35px;
+  position: relative;
+  z-index: 1;
+}
+.payment-primary {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  z-index: 2;
+  padding: 4px 9px;
+  border-radius: 20px;
+  background-color: rgb(255 255 255 / 25%);
+  color: #fff;
+  font-size: 10px;
+  white-space: nowrap;
+}
+  /* ###################end money management section#################   */
